@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="strap-right">
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+      </div>
+      <div class="container">
+        <h4 class="app-title">
+          <i class="fa-solid fa-stopwatch"></i>
+        </h4>
+        <div class="timer">
+          <span class="hr">00</span>: <span class="min">00</span>:
+          <span class="sec">00</span>.
+          <span class="ms">00</span>
+        </div>
+        <div class="buttons">
+          <button class="lap" onClick="lap()">lap</button>
+          <button class="stop other-side" onClick="stop()">stop</button>
+          <button class="reset" onClick="reset()">reset</button>
+          <button class="start other-side" onClick="start()">start</button>
+        </div>
+      </div>
+      <div class="knob"></div>
+      <div class="strap-left">
+        <div class="holder"></div>
+        <div class="hook">
+          <div class="tail"></div>
+        </div>
+      </div>
+    </main>
+    <div class="lap-container"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
